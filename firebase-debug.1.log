@@ -1,0 +1,75 @@
+[debug] [2021-07-18T07:49:07.195Z] ----------------------------------------------------------------------
+[debug] [2021-07-18T07:49:07.199Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\namit\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-18T07:49:07.200Z] CLI Version:   9.16.0
+[debug] [2021-07-18T07:49:07.200Z] Platform:      win32
+[debug] [2021-07-18T07:49:07.201Z] Node Version:  v14.17.1
+[debug] [2021-07-18T07:49:07.202Z] Time:          Sun Jul 18 2021 13:19:07 GMT+0530 (India Standard Time)
+[debug] [2021-07-18T07:49:07.202Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-18T07:49:07.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-18T07:49:07.213Z] > authorizing via signed-in user (namitchp@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\namit\Desktop\amazone-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-18T07:50:14.923Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-18T07:50:15.704Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-18T07:50:15.704Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project e-challenge-1e477 (amazone-challenge) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-07-18T07:52:45.484Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-07-18T07:52:45.974Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-07-18T07:52:45.975Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.7.1","browserURL":"https://www.gstatic.com/firebasejs/8.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.7.1/firebase.tgz"},"live":{"version":"8.7","browserURL":"https://www.gstatic.com/firebasejs/live/8.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.7.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.7.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.7.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.7.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\namit\Desktop\amazone-clone is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=602979801&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-18T07:53:13.919Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"e6271a3a774f14e14452","redirect_uri":"http://localhost:9005","state":"602979801"}
+[debug] [2021-07-18T07:53:14.522Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 18 Jul 2021 07:53:16 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"0551833e7f1e1ecedec61c409feb0943\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"48F9:0EB6:CB27D:27181A:60F3DDEB"}
+[debug] [2021-07-18T07:53:14.539Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-18T07:53:15.322Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-18T07:53:15.322Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"namit-yu-dev","id":70138978,"node_id":"MDQ6VXNlcjcwMTM4OTc4","avatar_url":"https://avatars.githubusercontent.com/u/70138978?v=4","gravatar_id":"","url":"https://api.github.com/users/namit-yu-dev","html_url":"https://github.com/namit-yu-dev","followers_url":"https://api.github.com/users/namit-yu-dev/followers","following_url":"https://api.github.com/users/namit-yu-dev/following{/other_user}","gists_url":"https://api.github.com/users/namit-yu-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/namit-yu-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/namit-yu-dev/subscriptions","organizations_url":"https://api.github.com/users/namit-yu-dev/orgs","repos_url":"https://api.github.com/users/namit-yu-dev/repos","events_url":"https://api.github.com/users/namit-yu-dev/events{/privacy}","received_events_url":"https://api.github.com/users/namit-yu-dev/received_events","type":"User","site_admin":false,"name":"NAMIT  KUMAR","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"I am developer","twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":2,"created_at":"2020-08-24T09:45:09Z","updated_at":"2021-07-18T07:24:32Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":8681,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as namit-yu-dev 
+[info] 
+[debug] [2021-07-18T07:54:14.413Z] >>> [apiv2][query] GET https://api.github.com/repos/amazone_clone/actions/secrets/public-key type=owner
+[debug] [2021-07-18T07:54:14.974Z] <<< [apiv2][status] GET https://api.github.com/repos/amazone_clone/actions/secrets/public-key 404
+[debug] [2021-07-18T07:54:14.975Z] <<< [apiv2][body] GET https://api.github.com/repos/amazone_clone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-18T07:56:42.898Z] >>> [apiv2][query] GET https://api.github.com/repos/amazon_clone/actions/secrets/public-key type=owner
+[debug] [2021-07-18T07:56:43.461Z] <<< [apiv2][status] GET https://api.github.com/repos/amazon_clone/actions/secrets/public-key 404
+[debug] [2021-07-18T07:56:43.462Z] <<< [apiv2][body] GET https://api.github.com/repos/amazon_clone/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-18T07:56:51.306Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/namit-yu-dev/amazon_clone.git/actions/secrets/public-key type=owner
+[debug] [2021-07-18T07:56:51.782Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/namit-yu-dev/amazon_clone.git/actions/secrets/public-key 404
+[debug] [2021-07-18T07:56:51.782Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/namit-yu-dev/amazon_clone.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-18T07:57:28.533Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2021-07-18T07:57:29.188Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2021-07-18T07:57:29.188Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-18T07:58:01.961Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2021-07-18T07:58:02.611Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2021-07-18T07:58:02.612Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
